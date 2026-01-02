@@ -50,11 +50,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        violet: {
-          DEFAULT: "hsl(var(--violet))",
-          glow: "hsl(var(--violet-glow))",
+        neon: {
+          purple: "hsl(var(--neon-purple))",
+          cyan: "hsl(var(--neon-cyan))",
+          pink: "hsl(var(--neon-pink))",
         },
-        peach: "hsl(var(--peach))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -93,11 +93,13 @@ export default {
         'gradient-card': 'var(--gradient-card)',
         'gradient-button': 'var(--gradient-button)',
         'gradient-cta': 'var(--gradient-cta)',
+        'gradient-neon': 'var(--gradient-neon)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',
         'card': 'var(--shadow-card)',
         'button': 'var(--shadow-button)',
+        'neon': 'var(--shadow-neon)',
       },
     },
   },

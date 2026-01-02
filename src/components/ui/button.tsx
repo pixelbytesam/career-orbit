@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -15,16 +15,16 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-violet to-primary text-primary-foreground font-semibold shadow-button hover:opacity-90 hover:-translate-y-0.5",
-        glass: "backdrop-blur-xl bg-secondary/30 border border-border/30 text-foreground hover:bg-secondary/50",
-        platform: "backdrop-blur-xl bg-secondary/30 border border-primary/30 text-foreground shadow-button hover:border-primary/60 hover:bg-primary/10",
-        cta: "bg-gradient-to-r from-violet to-primary text-primary-foreground font-semibold shadow-button hover:scale-105 hover:opacity-90",
+        hero: "bg-gradient-button text-primary-foreground font-semibold button-glow hover:shadow-[0_6px_40px_hsl(270_80%_50%/0.7)] hover:-translate-y-0.5",
+        glass: "glass-card text-foreground border-primary/30 hover:border-primary/50 hover:bg-primary/10",
+        platform: "glass-card text-foreground border-primary/20 hover:border-primary/40 hover:neon-glow transition-all duration-300",
+        cta: "bg-gradient-neon text-primary-foreground font-semibold button-glow hover:shadow-[0_6px_40px_hsl(270_80%_50%/0.7)] hover:-translate-y-0.5",
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-full px-3",
-        lg: "h-12 rounded-full px-8 text-base",
-        xl: "h-14 rounded-full px-10 text-lg",
+        sm: "h-9 rounded-lg px-3",
+        lg: "h-12 rounded-xl px-6 text-base",
+        xl: "h-14 rounded-2xl px-8 text-base",
         icon: "h-10 w-10",
       },
     },

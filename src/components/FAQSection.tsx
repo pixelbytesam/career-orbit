@@ -7,7 +7,7 @@ import {
 
 const faqs = [
   {
-    question: "Who can join the community?",
+    question: "Who can join this community?",
     answer: "Our community is open to all students, recent graduates, and early-career professionals who are passionate about career growth. Whether you're from engineering, arts, commerce, or any other field—everyone is welcome!",
   },
   {
@@ -15,16 +15,12 @@ const faqs = [
     answer: "Yes! Joining our community is completely free. We believe in making career guidance accessible to everyone. Some premium resources and mentorship programs may have associated costs, but the core community experience is always free.",
   },
   {
-    question: "How do I ask questions in the community?",
-    answer: "Once you join any of our platforms (Telegram, WhatsApp, or Discord), you can simply post your questions in the designated channels. Our community members and mentors are always ready to help. For Discord, we have topic-specific channels for better organization.",
-  },
-  {
-    question: "Which platform is best for me?",
+    question: "Which platform should I choose?",
     answer: "It depends on your preference! Telegram is great for quick updates and casual discussions. WhatsApp works well for focused, smaller groups. Discord offers the most features with voice channels, topic organization, and live sessions. Many members join all three!",
   },
   {
-    question: "Can I get 1-on-1 mentorship?",
-    answer: "Yes! We connect students with industry professionals for personalized mentorship. You can request mentorship through our Discord server or Telegram groups. Our mentors volunteer their time to help students succeed.",
+    question: "How can I ask questions?",
+    answer: "Once you join any of our platforms (Telegram, WhatsApp, or Discord), you can simply post your questions in the designated channels. Our community members and mentors are always ready to help. For Discord, we have topic-specific channels for better organization.",
   },
 ];
 
@@ -32,7 +28,8 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-20 lg:py-32 relative">
       {/* Background effects */}
-      <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-neon-purple/8 rounded-full blur-[150px]" />
+      <div className="absolute bottom-0 right-1/3 w-[300px] h-[300px] bg-neon-cyan/5 rounded-full blur-[120px]" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
@@ -51,9 +48,9 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="glass-card border-none rounded-2xl px-6 overflow-hidden"
+                className="glass-card border-none rounded-2xl px-6 overflow-hidden hover:border-primary/30 transition-all duration-300"
               >
-                <AccordionTrigger className="text-left text-base sm:text-lg font-medium hover:no-underline py-5">
+                <AccordionTrigger className="text-left text-base sm:text-lg font-medium hover:no-underline py-5 text-foreground">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
