@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-button flex items-center justify-center group-hover:scale-105 transition-transform neon-glow">
+            <div className="w-10 h-10 rounded-xl bg-gradient-button flex items-center justify-center group-hover:scale-105 transition-transform">
               <Users className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="text-lg font-bold text-foreground">CareerHub</span>
@@ -30,7 +30,7 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item.label}
               </a>
@@ -55,7 +55,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden glass-card absolute top-full left-4 right-4 mt-2 p-4 animate-scale-in border border-primary/30">
+          <div className="md:hidden glass-card absolute top-full left-4 right-4 mt-2 p-4 animate-scale-in">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
