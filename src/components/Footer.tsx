@@ -26,7 +26,7 @@ const Footer = () => {
               <a
                 key={social.label}
                 href={social.href}
-                className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all"
+                className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/50 hover:neon-glow transition-all duration-300"
                 aria-label={social.label}
               >
                 <social.icon className="w-5 h-5" />
@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Built for Students */}
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <span>Built with</span>
-            <Heart className="w-4 h-4 text-red-400 fill-red-400" />
+            <Heart className="w-4 h-4 text-neon-pink fill-current" />
             <span>for Students</span>
           </div>
         </div>
